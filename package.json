@@ -1,0 +1,19 @@
+{
+  "name": "socket-book",
+  "version": "1.0.0",
+  "description": "uses web sockets to transmit information from an ebook to a desktop computer",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "grunt": "^0.4.5",
+    "jquery": "^2.2.1",
+    "socket.io": "^1.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sean Dooney",
+  "license": "ISC"
+}
