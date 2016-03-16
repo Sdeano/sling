@@ -13,4 +13,17 @@ module.exports = function(app) {
     app.get('/images/Neptune.jpg', function (req, res) {
         res.sendFile(__dirname + "/images/Neptune.jpg")
     });
+
+    app.get('/images/SAP-logo2.png', function (req, res) {
+        res.sendFile(__dirname + "/images/SAP-logo2.png")
+    });
+    app.get('/js/jquery.min.js', function (req, res) {
+        res.sendFile(__dirname + "/js/jquery.min.js")
+    });
+
+
+    app.get('/fonts/glyphicons-halflings-regular.ttf', function (req, res) {
+        res.sendFile(__dirname + "/fonts/glyphicons-halflings-regular.ttf")
+    });
 }
+

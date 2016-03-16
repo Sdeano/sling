@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Domine);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
 /*//////////////////////////////////////////////////////////////
 
 Fonts
@@ -9,6 +10,12 @@ Fonts
     font-family: 'Noaa-demi';
     src:url('../fonts/NOOA%20Demi-Serif%20DEMO.ttf') format('truetype');
 
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 
 
@@ -25,12 +32,119 @@ body
     margin:0;
 }
 
+.title
+{
+    font-family: 'Lato',sans-serif;
+    color:silver;
+    font-weight:300;
+}
+
 .content-container
 {
 
     background:white;
     width:100%;
-    margin-top:100px;
+    margin-top:50px;
+}
+
+#menutoggle
+{
+    font-weight:200;
+}
+
+.text-section
+{
+
+}
+
+.text-section-header
+{
+    width:100%;
+    height:60px;
+    font-size:3em;
+    font-family: 'Domine',sans-serif;
+    position:fixed;
+    top:0;
+
+
+    background: #283048; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283048 , #859398); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283048 , #859398); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.text-section-header img
+{
+    height:100%;
+    top: -3px;
+    position: relative;
+}
+
+.side-menu
+{
+    width: 100%;
+    background: black;
+
+    top: -6px;
+    position: relative;
+    transition:.5s;
+}
+
+.side-menu ul
+{
+background:black;
+    width: 100%;
+    padding: 0;
+    display:none;
+
+}
+
+.side-menu ul li
+{
+    color:white;
+    display:block;
+    border-bottom: solid 2px gray;
+    width:100%;
+    font-size:.7em;
+}
+
+.side-menu ul:nth-child(odd):before
+{
+
+}
+
+.side-list:nth-child(2):before
+{
+    content:"B";
+    width:5%;
+    background:gray;
+    display:inline-block;
+    height:100%;
+    color:gray;
+}
+
+
+
+.text-section img
+{
+width:100%;
+
+}
+
+.text-section p
+{
+    font-size:18px;
+    margin:15px;
+    line-height: 1.5;
+}
+
+.textsction h1
+{
+
+}
+
+.text-section-header
+{
+
 }
 
 

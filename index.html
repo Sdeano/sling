@@ -6,16 +6,67 @@
 
     <title></title>
     <link href = "css/main.css" rel = "stylesheet">
+    <link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel = "stylesheet">
 </head>
 <body>
+<div class = "text-section-header"><img src = "images/SAP-logo2.png"><span class = "title">SLING</span><span id = "menutoggle" style = "float:right;color: white;
+    float: right;
+    padding-right: 10px;
+    padding-top: 5px;" class="glyphicon glyphicon-menu-hamburger"></span>
+    <div class = "side-menu">
+        <ul class = "side-list">
+            <li>
+               <span> 1. First Steps</span>
+            </li>
+            <li>
+               <span> 2. Getting Started</span>
+            </li>
+            <li>
+               <span> 3. Set-up</span>
+            </li>
+        </ul>
+    </div>
+</div>
 
 <div class = "content-container">
-Space
+    <div class = "text-section">
+        <img src = "images/Neptune.jpg">
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Praesent faucibus ullamcorper felis, eget laoreet justo
+            eu. Fusce rhoncus vestibulum ligula in tincidunt. Sed sem
+            neque, volutpat a ullamcorper placerat, porttitor at felis.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Nullam tristique elementum justo nec fringilla. Duis vulputate
+            laoreet ante in porta. Suspendisse vitae facilisis arcu.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Praesent faucibus ullamcorper felis, eget laoreet justo
+            eu. Fusce rhoncus vestibulum ligula in tincidunt. Sed sem
+            neque, volutpat a ullamcorper placerat, porttitor at felis.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Nullam tristique elementum justo nec fringilla. Duis vulputate
+            laoreet ante in porta. Suspendisse vitae facilisis arcu.
+        </p>
+
+
+    </div>
+
 </div>
 
 
 
+<script src = "js/jquery.min.js"></script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+    $("#menutoggle").on("click",function()
+    {
+        $(".side-menu ul").slideToggle();
+    });
 
-
+</script>
 </body>
 </html>
