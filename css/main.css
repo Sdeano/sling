@@ -160,7 +160,11 @@ width:100%;
 }
 
 
-
+.content-title
+{
+    display:block;
+    background:gray;
+}
 
 
 
