@@ -165,6 +165,7 @@ width:100%;
     display:block;
     background:gray;
     margin:0;
+    height:100%
 }
 
 .title-number
@@ -172,11 +173,21 @@ width:100%;
     display:inline-block;
     background:red;
     color:white;
+    height:100%;
+    margin:0;
+    font-size: 60px;
+}
+
+.title-block
+{
+    height:70px;
 }
 
 .title-words
 {
     display:inline-block;
+    font-size: 60px;
+    margin:0;
 }
 
 
