@@ -171,12 +171,12 @@ width:100%;
 .title-number
 {
     display:inline-block;
-    background:red;
+    background:#FF0000;
     color:white;
     height:100%;
     margin:0;
     font-size: 60px;
-    width:10%;
+    width:70px;
 }
 
 .title-block
