@@ -112,14 +112,26 @@ background:black;
 
 }
 
-.side-list:nth-child(2):before
+.side-list li:nth-child(odd):before
 {
-    content:"B";
+
+    content:"I";
     width:5%;
     background:gray;
     display:inline-block;
     height:100%;
     color:gray;
+}
+
+.side-list li:nth-child(even):before
+{
+
+    content:"I";
+    width:5%;
+    background:whitesmoke;
+    display:inline-block;
+    height:100%;
+    color:whitesmoke;
 }
 
 
