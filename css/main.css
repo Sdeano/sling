@@ -145,6 +145,7 @@ width:100%;
 .text-section p
 {
     font-size:18px;
+    margin:15px;
     line-height: 1.5;
 }
 
@@ -163,7 +164,6 @@ width:100%;
 {
     display:block;
     background:gray;
-    margin:15px;
 }
 
 
