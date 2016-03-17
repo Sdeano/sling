@@ -160,12 +160,25 @@ width:100%;
 }
 
 
-.content-title
+.title-block
 {
     display:block;
     background:gray;
     margin:0;
 }
+
+.title-number
+{
+    display:inline-block;
+    background:red;
+    color:white;
+}
+
+.title-words
+{
+    display:inline-block;
+}
+
 
 
 
