@@ -52,7 +52,8 @@ body
 #menutoggle
 {
     font-weight:200;
-    font-size:1em;
+    font-size:.7em;
+    line-height:1.5;
 }
 
 .text-section
@@ -104,7 +105,7 @@ body
 .text-section-header img
 {
     height:100%;
-    top: -3px;
+    top: -5px;
     position: relative;
 }
 

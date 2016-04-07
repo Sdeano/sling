@@ -6,8 +6,16 @@ module.exports = function(app) {
         res.sendFile(__dirname + "/index.html")
     });
 
+    app.get('/samplehelp.html', function (req, res) {
+        res.sendFile(__dirname + "/samplehelp.html")
+    });
+
     app.get('/css/main.css', function (req, res) {
         res.sendFile(__dirname + "/css/main.css")
+    });
+
+    app.get('/videos/xray-stable-ids.mp4', function (req, res) {
+        res.sendFile(__dirname + "/videos/xray-stable-ids.mp4")
     });
 
     app.get('/images/Neptune.jpg', function (req, res) {

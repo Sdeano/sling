@@ -110,6 +110,11 @@ io.on("connection",function(client)
         }
     });
 
+    client.on("sendevent",function(any)
+    {
+        io.emit("confirmedevent","happy");
+    });
+
     client.on("desktop help request",function(altinfo,vkey)
     {
         io.to(findByKey(vkey).socketID).emit("display desktop help",altinfo);
@@ -117,6 +122,11 @@ io.on("connection",function(client)
     client.on("new message",function(msg)
     {
         io.emit("confirming message","this confirms it");
+    });
+
+    client.on("interact",function(alt,copy)
+    {
+        io.emit("interactclient",alt,copy);
     });
 
 });
