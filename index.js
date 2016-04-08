@@ -126,6 +126,7 @@ io.on("connection",function(client)
 
     client.on("interact",function(alt,copy)
     {
+        console.log(copy);
         io.emit("interactclient",alt,copy);
     });
 
