@@ -214,8 +214,9 @@ console.log("tes");
 
     $(".slingbutton").on("click",function()
     {
-        socket.emit("interact","copyable",$(this).siblings(".copyable").text())
-;
+        Console.log("test");
+        socket.emit("interact","copyable",$(this).siblings(".copyable").text());
+
 
     });
 
