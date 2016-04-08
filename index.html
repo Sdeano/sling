@@ -95,6 +95,52 @@
     </ul>
 </div>
 
+<div class = "content-container">
+    <div class = "text-section">
+        <div class = "title-block">
+            <div class = "diamond">
+                <span class = "diamond-number">1.</span>
+            </div> <h1 class = "title-words">First Steps</h1>
+        </div>
+        <img src = "images/Neptune.jpg">
+
+        <p>
+            <code class = "copyable">
+                switch(alt)
+                {
+                case "play":document.getElementById('video1').play()
+                break;
+                case "pause":document.getElementById('video1').pause();
+                break;
+                case "copyable":if(copy)$(".testdiv").text(copy);
+                break;
+                }
+                </code>
+            <button class = "slingbutton"></button>
+        </p>
+
+        <p>
+            <code class = "copyable">
+                app.get('/images/Neptune.jpg', function (req, res) {
+                res.sendFile(__dirname + "/images/Neptune.jpg")
+                });
+
+                app.get('/images/SAP-logo2.png', function (req, res) {
+                res.sendFile(__dirname + "/images/SAP-logo2.png")
+                });
+                app.get('/js/jquery.min.js', function (req, res) {
+                res.sendFile(__dirname + "/js/jquery.min.js")
+                });
+                </code>
+            <button class = "slingbutton"></button>
+
+        </p>
+
+
+    </div>
+
+</div>
+
 
 
 <script src = "js/jquery.min.js"></script>
@@ -163,6 +209,13 @@ console.log("tes");
 
 
 
+
+    });
+
+    $(".slingbutton").on("click",function()
+    {
+        socket.emit("interact","copyable",$(this).siblings(".copyable").text())
+;
 
     });
 
