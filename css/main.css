@@ -242,7 +242,7 @@ width:100%;
 
 .codetainer
 {
-background:lightgray;
+background:#F9F2F4;
     width:80%;
     display:block;
     margin:0 auto;
@@ -263,6 +263,12 @@ background:lightgray;
 
 .codetainer code button
 {
+
+
+
+}
+.slingbutton
+{
     color:white;
     margin-top:10px;
     border:none;
@@ -272,8 +278,6 @@ background:lightgray;
     */
     background: #0066B8;
     font-family: 'Lato',sans-serif;
-
-
 }
 
 .sling-menu
