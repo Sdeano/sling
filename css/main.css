@@ -255,6 +255,16 @@ background:lightgray;
     margin:0 auto;
 }
 
+.codetainer code button
+{
+    color:black;
+    margin-top:10px;
+    border:none;
+    font-size:2em;
+
+
+}
+
 .sling-menu
 {
     background:transparent;
