@@ -22,6 +22,14 @@ module.exports = function(app) {
         res.sendFile(__dirname + "/images/Neptune.jpg")
     });
 
+    app.get('/images/Jupiter.jpg', function (req, res) {
+        res.sendFile(__dirname + "/images/Jupiter.jpg")
+    });
+
+    app.get('/images/Saturn.jpg', function (req, res) {
+        res.sendFile(__dirname + "/images/Saturn.jpg")
+    });
+
     app.get('/images/SAP-logo2.png', function (req, res) {
         res.sendFile(__dirname + "/images/SAP-logo2.png")
     });
