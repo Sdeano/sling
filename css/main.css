@@ -255,6 +255,12 @@ background:lightgray;
     margin:0 auto;
 }
 
+.codetainer code pre
+{
+
+
+}
+
 .codetainer code button
 {
     color:white;
