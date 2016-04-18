@@ -240,6 +240,21 @@ width:100%;
 
 }
 
+.codetainer
+{
+background:lightgray;
+    width:80%;
+    display:block;
+    margin:0 auto;
+
+}
+
+.codetainer code
+{
+    display:block;
+    margin:0 auto;
+}
+
 .sling-menu
 {
     background:transparent;
