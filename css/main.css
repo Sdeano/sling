@@ -233,10 +233,10 @@ width:100%;
     margin:0;
     font-size: 30px;
     margin-left:10px;
-    font-family:'Domine',sans-serif;
-    top: 5px;
+    font-family: 'Lato',sans-serif;    top: 5px;
     position: relative;
     line-height: 50px;
+    font-weight:400;
 
 }
 
