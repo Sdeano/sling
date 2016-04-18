@@ -253,6 +253,7 @@ background:#F9F2F4;
 {
     display:block;
     margin:0 auto;
+    overflow:hidden;
 }
 
 .codetainer code pre
@@ -278,6 +279,7 @@ background:#F9F2F4;
     */
     background: #0066B8;
     font-family: 'Lato',sans-serif;
+    margin:15px;
 }
 
 .sling-menu
