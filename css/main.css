@@ -67,6 +67,8 @@ body
     margin-left:10px;
     width:35px;
     height:35px;
+    -webkit-transform: rotate(45deg);
+
     transform:rotate(45deg);
     display:inline-block;
     transform-style: preserve-3d;
@@ -76,8 +78,9 @@ body
 
 .diamond-number
 {
+    -webkit-transform: rotate(-45deg);
     transform:rotate(-45deg);
-    -webkit-transform: rotate(-45deg);;
+
     text-align:center;
     font-size:4em;
     display:block;
