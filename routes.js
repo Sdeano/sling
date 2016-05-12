@@ -42,6 +42,15 @@ module.exports = function(app) {
         res.sendFile(__dirname + "/fonts/glyphicons-halflings-regular.ttf")
     });
 
+    app.get('/fonts/fontawesome-webfont.woff?v=4.0.3',function(req,res)
+    {
+        res.sendFile(__dirname + '/fonts/fontawesome-webfont.woff' )
+    });
+    app.get('/fonts/fontawesome-webfont.ttf?v=4.0.3',function(req,res)
+    {
+        res.sendFile(__dirname + '/fonts/fontawesome-webfont.ttf' )
+    });
+
     app.get('*',function(req,res)
     {
         res.sendFile(__dirname + req.url);
