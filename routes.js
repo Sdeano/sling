@@ -41,5 +41,10 @@ module.exports = function(app) {
     app.get('/fonts/glyphicons-halflings-regular.ttf', function (req, res) {
         res.sendFile(__dirname + "/fonts/glyphicons-halflings-regular.ttf")
     });
+
+    app.get('*',function(req,res)
+    {
+        res.sendfile(__dirname + req.url);
+    });
 }
 

@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<!--
+	Solarize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+	<title>Left Sidebar - Solarize by TEMPLATED</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/skel2.min.js"></script>
+	<script src="assets/js/skel-layers.min.js"></script>
+	<script src="assets/js/init.js"></script>
+	<noscript>
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</noscript>
+	<link rel = "stylesheet" href = "assets/css/sling.css">
+
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+<body>
+
+<!-- Header Wrapper -->
+<div class="wrapper style1">
+
+	<!-- Header -->
+	<div id="header">
+		<div class="container">
+
+			<!-- Logo -->
+			<h1><a href="index.html" id="logo">SLINGBOOK</a></h1>
+			<nav id = "nav">
+				<ul>
+					<li><a href = "chapter1.html">
+						Chapter 1
+					</a></li>
+					<li><a href = "chapter2.html">
+						Chapter 2
+					</a></li>
+					<li><a href = "chapter3.html">
+						Chapter 3
+					</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+</div>
+
+<!-- Main -->
+<div id="main" class="wrapper style4">
+	<div class="container">
+		<div class="row">
+
+
+			<!-- Content -->
+			<div id="content" class="container">
+				<section>
+					<header class="minor">
+						<h2>Adding Approve and Reject Actions</h2>
+					</header>
+					<p><h3>Chapter 1: Enable approve and reject actions</h3>
+					As of now, the application is nothing more than an open purchase order browser. So far, we enriched the information displayed in our app, but it is still only read only with no data changes possible. Let’s now im-plement the transactional behavior. To do so, we need a number of sub-steps, because besides the pure controller logic, we need to consider how our mock-server can support changes and what happens to our UI in case an approval is pending.
+					<br>
+					<br>
+					<img src = "assets/css/images/approvereject.png">
+					<br>
+					The definition is done in view/Detail.view.xml:
+					</p>
+								<div class = codetainer>
+									<code class = "copyable">
+										<br />
+										&lt;semantic:DetailPage<br/>
+										id=&quot;page&quot;<br/>
+										navButtonPress=&quot;onNavBack&quot;<br/>
+										showNavButton=&quot;{device&gt;/system/phone}&quot;<br/>
+										title=&quot;{i18n&gt;detailTitle}&quot;<br/>		busy=&quot;{detailView&gt;/busy}&quot;<br/>
+										busyIndicatorDelay=&quot;{detailView&gt;/delay}&quot;&gt;<br/><br/>
+										&lt;semantic:positiveAction&gt;<br/>
+										&lt;semantic:PositiveAction&nbsp;id=&quot;approveButton&quot;&nbsp;press=&quot;onApprove&quot;&nbsp;text=&quot;{i18n&gt;xbut.approve}&quot;/&gt;<br/>
+										&lt;/semantic:positiveAction&gt;<br/>
+										&lt;semantic:negativeAction&gt;<br/>
+										&lt;semantic:NegativeAction&nbsp;id=&quot;rejectButton&quot;&nbsp;press=&quot;onReject&quot;&nbsp;text=&quot;{i18n&gt;xbut.reject}&quot;/&gt;<br/>
+										&lt;/semantic:negativeAction&gt;<br/>
+										<br/>
+										&lt;semantic:content&gt;<br>
+
+
+									</code>
+
+								</div>
+					<p>
+						We use different semantics - positive and negative to indicate the different semantics of these buttons. For each button, we need to define a text to be displayed and an event handler that implements the behavior.
+						Both texts are defined in the i18n.properties file.
+					</p>
+
+
+					<div class = "codetainer">
+						<code class = "copyable">
+							<br />
+							#~~~ Detail View ~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+
+							#XBUT<br>
+							xbut.approve=Approve<br>
+							#XBUT<br>
+							xbut.reject=Reject<br>
+
+						</code>
+
+					</div>
+
+					<a href = "chapter2.html">Proceed to chapter 2</a>
+
+
+
+
+
+
+
+
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Footer -->
+<div id="footer">
+	<section class="container">
+		<header class="major">
+			<h2>Connect with us</h2>
+			<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+		</header>
+		<ul class="icons">
+			<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+			<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+			<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
+			<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+		</ul>
+		<hr />
+	</section>
+
+	<!-- Copyright -->
+	<div id="copyright">
+		Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+	</div>
+</div>
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+
+<script src = "assets/js/sling.js"></script>
+<script>
+	var socket = io();
+
+
+
+	$("#menutoggle").on("click",function()
+	{
+		$(".side-menu ul").slideToggle();
+	});
+
+	$(window).ready(function()
+			{
+				console.log($(".side-list:first-child"))
+			}
+	)
+
+	$(".sling-menu li a").on("click",function() {
+
+		var clickedItem = $(this);
+		var position = $(this).parent().position();
+		socket.emit("interact",$(clickedItem).attr("alt"),$(".copyable").text());
+
+		socket.emit("interact",$(clickedItem).attr("alt"));
+		$(this).animate({backgroundColor:"green",borderRadius:'50%',boxShadow:"0px 0px 0px rgb(0,0,0),inset 0px 0px 0px rgb(0,0,0)",color:"white"});
+		$(this).parent().animate({top:"-=60px"});
+		$(this).parent().animate({position:"absolute",left:"100%"},function()
+		{
+			console.log(clickedItem.parent());
+
+			$(clickedItem).parent().removeAttr('style');
+			$(clickedItem).removeAttr('style');
+			$(clickedItem).hide().fadeIn("slow",function()
+			{
+				//Animation Complete
+			});
+			//$(clickedItem).animate({width:"100%",height:"100%"});
+
+
+
+		});
+		/* $(this).parent().css({
+		 position:"relative",
+		 top:position.top,
+		 bottom:position.bottom,
+		 right:position.right,
+		 left:position.left
+		 })*/
+
+
+
+
+
+
+
+
+
+	});
+
+	$(".slingbutton").on("click",function()
+	{
+
+		socket.emit("interact","copyable",$(this).siblings(".copyable").text());
+
+
+
+	});
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Solarize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+    <title>Left Sidebar - Solarize by TEMPLATED</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/skel2.min.js"></script>
+    <script src="assets/js/skel-layers.min.js"></script>
+    <script src="assets/js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </noscript>
+    <link rel = "stylesheet" href = "assets/css/sling.css">
+
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+<body>
+
+<!-- Header Wrapper -->
+<div class="wrapper style1">
+
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+
+            <!-- Logo -->
+            <h1><a href="index.html" id="logo">SLINGBOOK</a></h1>
+            <nav id = "nav">
+                <ul>
+                    <li><a href = "chapter1.html">
+                        Chapter 1
+                    </a></li>
+                    <li><a href = "chapter2.html">
+                        Chapter 2
+                    </a></li>
+                    <li><a href = "chapter3.html">
+                        Chapter 3
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- Main -->
+<div id="main" class="wrapper style4">
+    <div class="container">
+        <div class="row">
+
+
+            <!-- Content -->
+            <div id="content" class="container">
+                <section>
+                    <header class="minor">
+                        <h2>
+
+                        </h2>
+                    </header>
+
+                    <p>
+                    <h3> Step 3 - Set up a new model that stores the global application state </h3>
+
+                    With the approval functionality, our application needs to handle different states. For example, once we call the business logic in the backend, we need to ensure that the purchase order instance is locked to prevent the user from clicking the approve button again. We also need a defaulting functionality to select the next purchase order once a purchase order is approved and removed from the list, this includes triggering a re-fresh of the list and detail view. Since part of the information is bound to elements in different views, a model is the best place to store the relevant information.
+                    Our application contains already four models:
+                    1.	OData service that encapsulates the business logic
+                    2.	Resource bundle for translatable texts
+                    3.	Device
+                    4.	FLP
+                    The first two are taken from the application descriptor manifest.json whereas the latter two are defined in model/model.js. The code to manage these models was generated for us from the template wizard. We’ll use the same mechanics for our new model to discuss what the template wizard already did for us and to get a consistent model usage within our app.
+
+                    So let’s define our new model in model/model.js too:
+
+
+
+                    </p>
+                    <pre>
+                        <div class = "codetainer">
+                            <code class = "copyable">
+                              <br />  sap.ui.define([<br/>		&quot;sap/ui/model/json/JSONModel&quot;,<br/>		&quot;sap/ui/Device&quot;,<br/>		&quot;sap/ui/model/BindingMode&quot;		<br/>	], function (JSONModel, Device, BindingMode) {<br/>		&quot;use strict&quot;;<br/><br/>		return {<br/>[&#x2026;]			<br/>			createGlobalModel : function() {<br/>				var oModel= new JSONModel({<br/>					isBusyApproving: false,<br/>					isSwipeRunning: false<br/>				});<br/>				oModel.setDefaultBindingMode(BindingMode.TwoWay);<br/>				return oModel;<br/>			}<br/>		};<br/>	}<br/>);<br/>
+
+                            </code>
+                        </div>
+                    </pre>
+
+                    <p>
+
+                        In contrast to the FLP and device model, this model requires two way binding. This is because FLP and de-vice model properties will not change during the execution of our app whereas the new model depends on different states. Furthermore, since we’ll change values via DataBinding and programmatically via setProper-ty, a two way binding in necessary. We’ll discuss the properties of this model later on.
+
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<div id="footer">
+    <section class="container">
+        <header class="major">
+            <h2>Connect with us</h2>
+            <span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+        </header>
+        <ul class="icons">
+            <li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+            <li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+            <li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
+            <li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+        </ul>
+        <hr />
+    </section>
+
+    <!-- Copyright -->
+    <div id="copyright">
+        Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+    </div>
+</div>
+<script src = "assets/js/sling.js"></script>
+
+
+</body>
+</html>

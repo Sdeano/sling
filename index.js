@@ -134,9 +134,9 @@ io.on("connection",function(client)
 
 
 
-http.listen(3003,function()
+http.listen(3004,function()
 {
-    console.log("listening on 3002");
+    console.log("listening on 3004");
 });
 
 function findByKey(vkey) {
