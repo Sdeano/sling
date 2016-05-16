@@ -124,10 +124,10 @@ io.on("connection",function(client)
         io.emit("confirming message","this confirms it");
     });
 
-    client.on("interact",function(alt,copy)
+    client.on("interact",function(alt,copy,chapter)
     {
         console.log(copy);
-        io.emit("interactclient",alt,copy);
+        io.emit("interactclient",alt,copy,chapter);
     });
 
 });
