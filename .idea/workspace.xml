@@ -67,21 +67,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="chapter1.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/chapter1.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-8.038462">
-                  <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="slingclient.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="slingclient.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/js/slingclient.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5244755">
-                  <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
                   <folding>
                     <element signature="e#0#44#0" expanded="false" />
                   </folding>
@@ -92,18 +82,18 @@
           <file leaf-file-name="chapter2.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/chapter2.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-9.038462">
-                  <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+                <state vertical-scroll-proportion="-5.3076925">
+                  <caret line="70" column="54" selection-start-line="70" selection-start-column="54" selection-end-line="70" selection-end-column="54" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="chapter3.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="chapter3.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/chapter3.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-6.576923">
-                  <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="89" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.43956044">
+                  <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -124,6 +114,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="-1.8888888">
                   <caret line="3" column="308" selection-start-line="3" selection-start-column="308" selection-end-line="3" selection-end-column="308" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="chapter1.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/chapter1.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-23.153847">
+                  <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -193,11 +193,11 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/routes.js" />
         <option value="$PROJECT_DIR$/css/font-awesome.min.css" />
-        <option value="$PROJECT_DIR$/chapter2.html" />
-        <option value="$PROJECT_DIR$/chapter3.html" />
         <option value="$PROJECT_DIR$/assets/css/sling.css" />
         <option value="$PROJECT_DIR$/chapter1.html" />
         <option value="$PROJECT_DIR$/assets/js/slingclient.js" />
+        <option value="$PROJECT_DIR$/chapter2.html" />
+        <option value="$PROJECT_DIR$/chapter3.html" />
       </list>
     </option>
   </component>
@@ -889,37 +889,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter1.html">
+    <entry file="file://$PROJECT_DIR$/assets/js/slingclient.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.038462">
-          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter3.html">
+    <entry file="file://$PROJECT_DIR$/chapter1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.576923">
-          <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="89" selection-end-column="0" />
+        <state vertical-scroll-proportion="-23.153847">
+          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chapter2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.038462">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.3076925">
+          <caret line="70" column="54" selection-start-line="70" selection-start-column="54" selection-end-line="70" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/slingclient.js">
+    <entry file="file://$PROJECT_DIR$/chapter3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5244755">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.43956044">
+          <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
