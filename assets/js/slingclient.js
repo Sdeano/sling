@@ -61,7 +61,7 @@ $(".sling-menu li a").on("click",function() {
 $(".slingbutton").on("click",function()
 {
 
-    socket.emit("interact","copyable",$(this).siblings(".copyable").html());
+    socket.emit("interact","copyable",$(this).siblings(".copyable").text());
 
 
 
